@@ -1,3 +1,5 @@
+import dulu database yang ada di folder database
+
 # Tampilan awal website
 http://localhost/poliklinik_bengkel_koding/index.php
 
