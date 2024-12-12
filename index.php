@@ -1,193 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<style>
-.client_section {
-    padding: 50px 0;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-.heading_container {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.heading_container h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.testimonial-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-content {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.img-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-box img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.text-content {
-    text-align: left;
-}
-
-.text-content h6 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.location {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.testimonial-text {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .card-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .img-box {
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-}
-
-</style>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/LogoUdinus.png" />
     <title>Udinus Poliklinik</title>
 
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+         body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hero {
+            background-color: aliceblue;
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            color: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
 
-<body class="hold-transition login-page">
-<div class="container-fluid flex flex-col justify-center items-center text-white p-5"
-     style="height: 400px; background-image: url('assets/images/gedung1.png'); background-size: cover; background-position: center; position: relative;">
-     <h1 class="font-weight-bold mb-3" style="color: black;">Udinus Poliklinik</h1>
-     <h5 style="color: black; font-weight: bold;">
-    Sistem Informasi Layanan Kesehatan
-</h5>
-    <marquee style="position: absolute; bottom: 0; background-color: rgba(0,0,0,0.5); color: white; width: 100%; padding: 10px;">
-        Selamat Datang di Website Saya Rawerrrrrr
-    </marquee>
-</div>
-    <div class="container mt-5">
-        <div class="row justify-content-lg-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-hospital-user fa-fw mb-3 text-primary" style="font-size: 34px;"></i>
-                        <h3 class="">Pasien</h3>
-                        <p class="card-text">Untuk mendapatkan layanan kesehatan dari Udinus Poliklinik, silahkan login terlebih dahulu</p>
-                        <a href="loginUser.php" class="btn btn-primary btn-block">Masuk</a>
-                    </div>
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h5 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero marquee {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .client_section {
+            padding: 50px 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            background-color: #ffffff;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        .btn-modern {
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .btn-modern:hover {
+        background: linear-gradient(to right, #00f2fe, #4facfe);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+
+    .btn-modern:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>POLIKLINIK UDINUS</h1>
+            <h5>Sistem Pelayanan Kesehatan dari Poliklinik Udinus</h5>
+        </div>
+        <marquee>Selamat Datang di Website Saya Rawerrrrrr</marquee>
+    </div>
+
+        <!-- Login Options -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <i class="fas fa-user-injured fa-3x text-info mb-3"></i>
+                    <h3>Pasien</h3>
+                    <p class="text-muted">Untuk mendapatkan layanan kesehatan dari Udinus Poliklinik, silahkan login terlebih dahulu.</p>
+                    <a href="loginUser.php" class="btn btn-modern">Masuk</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-stethoscope fa-fw mb-3 text-success" style="font-size: 34px;"></i>
-                        <h3 class="">Dokter</h3>
-                        <p class="card-text">Untuk memulai melayani pasien di Udinus Poliklinik, silahkan login terlebih dahulu</p>
-                        <div class="d-grid">
-                            <a href="login.php" class="btn btn-success btn-block">Masuk</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.login-box -->
-        <section class="client_section layout_padding">
-    <div class="container">
-        <div class="heading_container heading_center">
-            <h2>Testimoni Pelayanan</h2>
-        </div>
-        <!-- Customer 1 -->
-        <div class="testimonial-card my-4">
-            <div class="card">
-                <div class="card-content">
-                    <div class="img-box">
-                        <img src="assets/images/ahmad.jpg" alt="Client 1">
-                    </div>
-                    <div class="text-content">
-                        <h6>Ahmad</h6>
-                        <p class="location">Semarang</p>
-                        <p class="testimonial-text">Mantap, berobat jauh lebih mudah di Poliklinik Udinus</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Customer 2 -->
-        <div class="testimonial-card my-4">
-            <div class="card">
-                <div class="card-content">
-                    <div class="img-box">
-                        <img src="assets/images/Syafina.jpg" alt="Client 2">
-                    </div>
-                    <div class="text-content">
-                        <h6>Syafina</h6>
-                        <p class="location">Semarang</p>
-                        <p class="testimonial-text">Pelayan terbaik yang pernah saya alami untuk kesehatan</p>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <i class="fas fa-user-md fa-3x text-warning mb-3"></i>
+                    <h3>Dokter</h3>
+                    <p class="text-muted">Untuk memulai melayani pasien di Udinus Poliklinik, silahkan login terlebih dahulu.</p>
+                    <a href="login.php" class="btn btn-modern">Masuk</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
+    <!-- Testimonials -->
+    <section class="client_section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Testimoni Pelayanan</h2>
+                <p class="text-muted">Apa kata pasien kami tentang pelayanan kami?</p>
+            </div>
 
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep.jpg" alt="Hanep">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanif</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya sudah sehat</p>
+                    </div>
+                </div>
 
-        <!-- jQuery -->
-        <script src="assets/plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
-        <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="assets/dist/js/adminlte.min.js"></script>
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep1.jpg" alt="Hanif">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanep</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya juga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
