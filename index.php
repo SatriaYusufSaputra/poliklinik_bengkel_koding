@@ -188,6 +188,66 @@
                         <p class="mb-0">Saya juga</p>
                     </div>
                 </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep.jpg" alt="Hanep">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanif</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya sudah sehat</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep1.jpg" alt="Hanif">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanep</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya juga</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep.jpg" alt="Hanep">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanif</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya sudah sehat</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="img-box me-3">
+                                <img src="assets/images/hanep1.jpg" alt="Hanif">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Hanep</h6>
+                                <small class="text-muted">Semarang</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya juga</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

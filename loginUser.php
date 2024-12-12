@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Tambahan CSS -->
+    <link rel="icon" href="assets/images/LogoUdinus.png" />
     <style>
         body {
             font-family: Arial, sans-serif;

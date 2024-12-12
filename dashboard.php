@@ -26,6 +26,7 @@ if (isset($_SESSION['role_id'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="assets/images/LogoUdinus.png" />
     <?php include('components/head.php'); ?>
 </head>
 <body class="hold-transition sidebar-mini">
