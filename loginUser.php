@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #517f5a;
+            background:linear-gradient(to right, #4facfe, #00f2fe);
         }
 
         .login-container {
