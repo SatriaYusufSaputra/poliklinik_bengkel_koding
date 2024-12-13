@@ -7,7 +7,7 @@ http://localhost/poliklinik_bengkel_koding/index.php
 # Login admin lewat login dokter
 
 username : admin
-password : adminselalubenar
+password : admin
 
 # Login dokter
 
